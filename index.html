@@ -82,12 +82,22 @@
         <div class="section">
             <p>You can my projects on <a class="link" href="https://github.com/ethicalhacker7192" target="_blank">GitHub</a> where I collaborate with the community.</p>
             <p>You can also buy me hot chocolate by donating at: <a class="link" href="bitcoin:BC1Q7P24YGV7SXZ9KLM8RSJQMNH5G8UL7GWWS0DT9N" target="_blank">bc1q7p24ygv7sxz9klm8rsjqmnh5g8ul7gwws0dt9n</a></p>
-            <br>
-            <p>Well..this is the end of the porfolio. (please donate! All donations are appreciated!)</p>
+            <button id="secretButton" onclick="checkClick()">Click me for literally nothing to happen</button>
         </div>
     </div>
     <div class="footer">
         <p>&copy; 2024 ethicalhacker7192</p>
     </div>
+    <script>
+        let clickCount = 0;
+
+        function checkClick() {
+            clickCount++;
+            if (clickCount >= 10) {
+                alert("Congrats! You're know how to push buttons! Go tell others about your achievement! (please donate! All donations are appreciated!)");
+                clickCount = 0; // Reset click count if you want the button to be clicked 10 times again for the next achievement
+            }
+        }
+    </script>
 </body>
 </html>
